@@ -121,3 +121,13 @@ This is possible. Consider the following input file:
 
 
 <b>Question 3: Prove OPTFF is Optimal</b>
+
+Let $A_i$ denote an optimal algorithm that matches the decisions of OPTFF for the first $i$ requests. We will show that there exists an algorithm $A_(i+1)$ that matches the decisions of OPTFF for the first $i+1$ requests and the number of misses for $A_(i+1)$ is less than or equal to the number of misses for $A_i$.
+
+Consider what happens on the (i+1)th request. If we have a hit for both $A_i$ and OPTFF or the same page is evicted, then they match already so nothing has to be done to produce $A_(i+1)$. So consider the case where OPTFF evicts page A and $A_i$ evicts a different page, B. 
+
+We now define $A_(i+1)$ as follows: $A_(i+1)$ evicts page A at step i+1 like OPTFF. After that, $A_(i+1)$ follows $A_i$.
+
+Now consider future requests to page A or B. If B is requested, then $A_(i+1)$ hits because B was not evicted. $A_i$ misses though because it evicts B. So $A_(i+1)$ has one fewer miss than $A_i$. If A is requested, then $A_i$ hits because it evicted B, and $A_(i+1)$ misses because it already evicted A. However, because A is the farthest-in-future request as specified by OPTFF, the request for B must occur before the request for A. Hence, the number of misses for $A_(i+1)$ cannot exceed the number of misses for $A_i$. 
+
+This shows that we can transform an arbitrary algorithm A that agrees with OPTFF on some number of requests, into an algorithm that agrees on all steps (which means A is transformed into OPTFF) where the number of misses for OPTFF is bounded above by the number of misses for A. Since A is arbitrary, OPTFF is optimal.
