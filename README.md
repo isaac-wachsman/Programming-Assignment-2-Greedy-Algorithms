@@ -58,4 +58,46 @@ OPTFF: <number of misses>
 ```
 
 
+## Written Component
 
+Question 1: Empirical Comparison
+
+<table>
+  <tr>
+    <th>Input File</th>
+    <th>k</th>
+    <th>m</th>
+    <th>FIFO</th>
+    <th>LRU</th>
+    <th>OPTFF</th>
+  </tr>
+  <tr>
+    <td>input1.txt</td>
+    <td>3</td>
+    <td>100</td>
+    <td>61</td>
+    <td>61</td>
+    <td>44</td>
+  </tr>
+  <tr>
+    <td>input2.txt</td>
+    <td>2</td>
+    <td>100</td>
+    <td>54</td>
+    <td>50</td>
+    <td>38</td>
+  </tr>
+  <tr>
+    <td>input3.txt</td>
+    <td>5</td>
+    <td>75</td>
+    <td>29</td>
+    <td>37</td>
+    <td>20</td>
+  </tr>
+</table>
+
+
+Question 2: Bad Sequence for LRU or FIFO
+
+Question 3: Prove OPTFF is Optimal
