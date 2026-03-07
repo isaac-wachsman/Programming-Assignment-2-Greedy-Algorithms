@@ -118,7 +118,7 @@ This is possible. Consider the following input file:
 
 <p>The input results in 4 cache misses with OPTFF. The first 3 requests miss as the cache is initially empty. The request for 4 misses because the cache contains 1, 2, and 3. However, 2 or 3 is evicted instead of 1 because there are no more requests for 2 or 3 later in the sequence. Hence, 1 stays in the cache and hits on the last request.</p>
 
-
+<hr>
 
 <b>Question 3: Prove OPTFF is Optimal</b>
 
