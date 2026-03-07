@@ -29,3 +29,33 @@
 
 
 
+## Input / Output
+
+Input is expected to come from txt files in the following form:
+
+```
+k m
+r1 r2 r3 ... rm
+```
+The first line contains two positive integers. The first integer, k, represents the capacity of the cache. The following integer, m, is the number of requests. The following line contains m integers separated by spaces which represent the ids of the cache pages being requested. As an example, consider the following input file:
+
+```
+3 7
+1 2 3 4 3 2 1
+```
+
+Above, the cache size is 3 and there are 7 requests made.
+
+
+**NOTE:** Input files that do not match this specified format will result in undefined behavior.
+
+
+The matcher output is printed in the terminal in the form:
+```
+FIFO:  <number of misses>
+LRU:   <number of misses>
+OPTFF: <number of misses>
+```
+
+
+
