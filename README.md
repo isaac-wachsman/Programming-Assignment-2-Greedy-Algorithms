@@ -60,7 +60,7 @@ OPTFF: <number of misses>
 
 ## Written Component
 
-Question 1: Empirical Comparison
+<b>Question 1: Empirical Comparison</b>
 
 <table>
   <tr>
@@ -96,6 +96,9 @@ Question 1: Empirical Comparison
     <td>20</td>
   </tr>
 </table>
+
+Does OPTFF have the fewest misses? Yes, it has the fewest misses on all input files. This will be proven to always be the case in question 3.
+How does FIFO compare to LRU? As demonstrated by the above data, LRU can have fewer, more, or the same number of misses compared to FIFO depending on the input.
 
 
 Question 2: Bad Sequence for LRU or FIFO
