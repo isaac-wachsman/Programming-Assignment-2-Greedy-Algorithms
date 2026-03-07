@@ -25,7 +25,7 @@
 
 3. Run `g++ -o main main.cpp driver.cpp parser.cpp` to compile the program.
 
-4. Run `./main` to run the program. You will be prompted to provide an input file on which to run the cache replacement algorithms. To use the provided input files, type '../tests/inputN.txt' where N = 1, 2, or 3 and hit enter. If you are using a custom input file, type the path of the file relative to src and hit enter.
+4. Run `./main` to run the program. You will be prompted to provide an input file on which to run the cache replacement algorithms. To use the provided input files, type `../tests/inputN.txt` where N = 1, 2, or 3 and hit enter. If you are using a custom input file, type the path of the file relative to src and hit enter.
 
 
 
