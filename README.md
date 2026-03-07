@@ -97,10 +97,14 @@ OPTFF: <number of misses>
   </tr>
 </table>
 
-Does OPTFF have the fewest misses? Yes, it has the fewest misses on all input files. This will be proven to always be the case in question 3.
-How does FIFO compare to LRU? As demonstrated by the above data, LRU can have fewer, more, or the same number of misses compared to FIFO depending on the input.
+<hr>
+Does OPTFF have the fewest misses?
+Yes, it has the fewest misses on all input files. This will be proven to always be the case in question 3.
+<hr>
+How does FIFO compare to LRU?
+As demonstrated by the above data, LRU can have fewer, more, or the same number of misses compared to FIFO depending on the input.
+<hr>
 
+<b>Question 2: Bad Sequence for LRU or FIFO</b>
 
-Question 2: Bad Sequence for LRU or FIFO
-
-Question 3: Prove OPTFF is Optimal
+<b>Question 3: Prove OPTFF is Optimal</b>
