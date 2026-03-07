@@ -107,4 +107,17 @@ As demonstrated by the above data, LRU can have fewer, more, or the same number 
 
 <b>Question 2: Bad Sequence for LRU or FIFO</b>
 
+This is possible. Consider the following input file:
+
+```
+3 5
+1 2 3 4 1
+```
+
+<p>This input will result in 5 cache misses for both LRU and FIFO. Clearly, the first 3 requests miss as the cache is initially empty. The request for 4 misses because the cache contains 1, 2, and 3. At this step, 1 is evicted as it is both the first in and the least recently accessed. Hence, when there is another request for 1, it is another miss.</p>
+
+<p>The input results in 4 cache misses with OPTFF. The first 3 requests miss as the cache is initially empty. The request for 4 misses because the cache contains 1, 2, and 3. However, 2 or 3 is evicted instead of 1 because there are no more requests for 2 or 3 later in the sequence. Hence, 1 stays in the cache and hits on the last request.</p>
+
+
+
 <b>Question 3: Prove OPTFF is Optimal</b>
